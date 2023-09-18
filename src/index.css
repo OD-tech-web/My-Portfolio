@@ -1,0 +1,171 @@
+:root {
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 250;
+    --bg-color: #1f2428;
+    --second-bg-color: #515255;
+    --text-color: #fff;
+    --main-color: #0ef;
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+
+    /*========== Font and typography ==========*/
+    /* --body-font: 'Poppins', sans-serif; */
+    --h1-font-size: 1.5rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem; 
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margin Bottom ==========*/
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem; 
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+}
+
+/* Font size for Large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --h1-font-size: 2.25rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* Georgia, 'Times New Roman', Times, serif */
+    /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+    /*'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    /* 'Times New Roman', Times, serif */
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*========== REUSEABLE CSS CLASSES ==========*/
+.section {
+    padding: 4rem 0 4rem;
+}
+
+.section_title {
+    font-size: var(--h1-font-size);
+}
+
+.section_subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section_title, .section_subtitle {
+    text-align: center;
+}
+
+/*========== LAYOUT ==========*/
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/*========== BUTTONS ==========*/
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-color);
+    border-radius: 0 .8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    letter-spacing: .1rem;
+    font-weight: 700;
+    border: 2px solid var(--bg-color);
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--bg-color);
+}
+
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section {
+        min-height: 100vh;
+        padding: 6rem 0 2rem;
+    }
+
+    .section_subtitle {
+        margin-bottom: 4rem;
+    }
+
+    .main {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        padding: 0;
+    }
+
+    .header {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+}

@@ -1,0 +1,17 @@
+footer {
+    background: var(--main-color);
+}
+.footer-text {
+    font-size: 1rem;
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 7%;
+    }
+}
