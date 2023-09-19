@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import {FaXTwitter} from 'react-icons/fa6';
+import {AiFillGithub} from 'react-icons/ai';
+import {AiFillLinkedin} from 'react-icons/ai';
+import {AiOutlineArrowUp} from 'react-icons/ai';
 import './home.css';
 
 const Home = () => {
@@ -94,17 +98,17 @@ const Home = () => {
                 <div className="home-content">
                     <h3>Hello, It's Me</h3>
                     <h1>Odera <span>Nnaneme</span></h1>
-                    <h3>And I'am a Frontend Developer</h3>
+                    <h3>And I'am a <span>Frontend</span> Developer</h3>
                     <p>A fervent front-end developer with a passion for creating<br />
                         visually stunning and user-centric web experiences. I specialize<br />
                         in turning design mockups into pixel-perfect, responsive<br />
                         web pages using modern HTML, CSS, and JavaScript frameworks.</p>
                     <div className="social-media">
-                        <a href="#"><i className="bx bxl-github"></i></a>
-                        <a href="#"><i className="bx bxl-twitter"></i></a>
-                        <a href="#"><i className="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/OD-tech-web"><AiFillGithub/></a>
+                        <a href="https://twitter.com/OderaNnaneme?t=U-9j543zrMeNPscyCcsYew&s=09"><FaXTwitter/></a> 
+                        <a href="https://www.linkedin.com/in/odera-nnaneme-4a4583249"><AiFillLinkedin/></a>
                     </div>
-                    <a href="../resume/Odera-OD-tech.pdf" className="button" download='download'>Download CV</a>
+                    <a href="Odera-OD-tech Resume.pdf" className="button" download="Odera-OD-tech Resume.pdf">Download CV</a>
                 </div>
 
                 <div className="home-img">
@@ -116,7 +120,7 @@ const Home = () => {
             </section>
 
             <section className="fixed-iconTop">
-                <a href="#home">1</a>
+                <a href="#home"><AiOutlineArrowUp/></a>
             </section>
         </>
     )

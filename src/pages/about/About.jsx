@@ -20,7 +20,7 @@ const About = () => {
                         </p>
 
                         <div className="about_buttons">
-                            <a download='download' href="../resume/Odera-OD-tech.pdf" className="button button-flex">
+                            <a href="Odera-OD-tech Resume.pdf" download="Odera-OD-tech Resume.pdf" className="button button-flex">
                                 Download CV 
                             </a>
                         </div>

@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import './contact.css';
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_f43f5k9', 'template_ub9wx59', form.current, 'wrFlDSJ7YOvYJ6d3D')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        
+        e.target.reset();
+    };
+
     return (
         <>
             <section className="contact section div" id='contact'>
@@ -38,30 +54,30 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <form action="" className="contact_form grid">
+                    <form ref={form} onSubmit={sendEmail} className="contact_form grid">
                         <div className="contact_inputs grid">
                             <div className="contact_content">
-                                <label htmlFor="" className="contact_label">Name</label>
-                                <input type="text" className="contact_input" />
+                                <label className="contact_label">Name</label>
+                                <input type="text" className="contact_input" name="user_name"/>
                             </div>
                             <div className="contact_content">
-                                <label htmlFor="" className="contact_label">Email</label>
-                                <input type="email" className="contact_input" />
+                                <label className="contact_label">Email</label>
+                                <input type="email" className="contact_input" name="email"/>
                             </div>
                         </div>
                         <div className="contact_content">
-                            <label htmlFor="" className="contact_label">Project</label>
-                            <input type="text" className="contact_input" />
+                            <label className="contact_label">Subject</label>
+                            <input type="text" className="contact_input" name="subject"/>
                         </div>
                         <div className="contact_content">
-                            <label htmlFor="" className="contact_label">Message</label>
-                            <textarea name="" id="" cols='0' rows='7' className="contact_input" />
+                            <label className="contact_label">Message</label>
+                            <textarea name="message" cols='0' rows='7' className="contact_input" />
                         </div>
 
                         <div>
-                            <a href="#" className="button button-flex">
+                            <button type="Submit" className="button button-flex">
                                 Send Message
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
