@@ -15,7 +15,7 @@ const Portfolio = () => {
                         <div>
                             <h3 className="portfolio_title">School Website</h3>
                             <p className="portfolio_description">A School Website designed using HTML, CSS and React.</p>
-                            <a href="https://github.com/OD-tech-web/School-Site" className="button-flex button portfolio_button">
+                            <a target="_blank" href="https://github.com/OD-tech-web/School-Site" className="button-flex button portfolio_button">
                                 Code
                             </a>
                         </div>
@@ -26,7 +26,7 @@ const Portfolio = () => {
                         <div>
                             <h3 className="portfolio_title">MusicFestival Site</h3>
                             <p className="portfolio_description">A MusicFestival Website designed using HTML, Sass and JavaScript.</p>
-                            <a href="https://github.com/OD-tech-web/Music-Festival-Site" className="button-flex button portfolio_button">
+                            <a target="_blank" href="https://github.com/OD-tech-web/Music-Festival-Site" className="button-flex button portfolio_button">
                                 Code
                             </a>
                         </div>
@@ -37,7 +37,7 @@ const Portfolio = () => {
                         <div>
                             <h3 className="portfolio_title">Calculator</h3>
                             <p className="portfolio_description">A Calculator designed using HTML, CSS and JavaScript.</p>
-                            <a href="https://github.com/OD-tech-web/Calculator" className="button-flex button portfolio_button">
+                            <a target="_blank" href="https://github.com/OD-tech-web/Calculator" className="button-flex button portfolio_button">
                                 Code
                             </a>
                         </div>
@@ -48,7 +48,7 @@ const Portfolio = () => {
                         <div>
                             <h3 className="portfolio_title">Construction Website</h3>
                             <p className="portfolio_description">A Construction Website designed using HTML, Sass and JavaScript.</p>
-                            <a href="https://github.com/OD-tech-web/Construction-Site" className="button-flex button portfolio_button">
+                            <a target="_blank" href="https://github.com/OD-tech-web/Construction-Site" className="button-flex button portfolio_button">
                                 Code
                             </a>
                         </div>
@@ -59,7 +59,7 @@ const Portfolio = () => {
                         <div>
                             <h3 className="portfolio_title">Periodic Table</h3>
                             <p className="portfolio_description">A design of the periodic table using HTML and CSS.</p>
-                            <a href="https://github.com/OD-tech-web/Periodic-Table-Design" className="button-flex button portfolio_button">
+                            <a target="_blank" href="https://github.com/OD-tech-web/Periodic-Table-Design" className="button-flex button portfolio_button">
                                 Code
                             </a>
                         </div>
@@ -70,7 +70,7 @@ const Portfolio = () => {
                         <div>
                             <h3 className="portfolio_title">Hotel Website</h3>
                             <p className="portfolio_description">A Hotel Website designed using HTML, Sass and JavaScript.</p>
-                            <a href="https://github.com/OD-tech-web/Hotel-Site" className="button-flex button portfolio_button">
+                            <a target="_blank" href="https://github.com/OD-tech-web/Hotel-Site" className="button-flex button portfolio_button">
                                 Code
                             </a>
                         </div>

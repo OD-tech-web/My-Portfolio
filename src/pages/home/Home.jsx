@@ -104,11 +104,11 @@ const Home = () => {
                         in turning design mockups into pixel-perfect, responsive<br />
                         web pages using modern HTML, CSS, and JavaScript frameworks.</p>
                     <div className="social-media">
-                        <a href="https://github.com/OD-tech-web"><AiFillGithub/></a>
-                        <a href="https://twitter.com/OderaNnaneme?t=U-9j543zrMeNPscyCcsYew&s=09"><FaXTwitter/></a> 
-                        <a href="https://www.linkedin.com/in/odera-nnaneme-4a4583249"><AiFillLinkedin/></a>
+                        <a href="https://github.com/OD-tech-web" target="_blank"><AiFillGithub/></a>
+                        <a href="https://twitter.com/OderaNnaneme?t=U-9j543zrMeNPscyCcsYew&s=09" target="_blank"><FaXTwitter/></a> 
+                        <a href="https://www.linkedin.com/in/odera-nnaneme-4a4583249" target="_blank"><AiFillLinkedin/></a>
                     </div>
-                    <a href="Odera-OD-tech Resume.pdf" className="button" download="Odera-OD-tech Resume.pdf">Download CV</a>
+                    <a href="Odera-OD-tech-Resume.pdf" className="button" download="Odera-OD-tech-Resume.pdf">Download CV</a>
                 </div>
 
                 <div className="home-img">
